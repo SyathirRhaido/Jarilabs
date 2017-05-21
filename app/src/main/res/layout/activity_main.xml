@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activiti_main"
+    tools:context="com.herokuapp.jarilabs.jarilabs.MainActivity">
+    
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="3dp">
+
+        <ProgressBar
+            android:id="@+id/progresBar"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:background="@android:color/transparent"
+            android:progressDrawable="@drawable/custom_progress"
+            android:layout_gravity="top"
+            android:layout_marginTop="-3dp"
+            android:progress="20"/>
+
+    </FrameLayout>
+
+   <WebView
+       android:id="@+id/my_webview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></WebView>
+
+</LinearLayout>
